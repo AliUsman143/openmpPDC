@@ -36,6 +36,7 @@ void parallelMatrixMultiplication()
         }
     }
 }
+
 int main()
 {
     srand(time(0));

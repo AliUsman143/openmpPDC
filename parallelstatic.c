@@ -18,3 +18,20 @@ void initializeMatrices()
         }
     }
 }
+
+void parallelMatrixMultiplicationstatic()
+{
+#pragma omp parallel for collapse(2) schedule(static)
+    for (int i = 0; i < SIZE; i++)
+    {
+        for (int j = 0; j < SIZE; j++)
+        {
+            int sum = 0; // private variable
+            for (int k = 0; k < SIZE; k++)
+            {
+                sum += A[i][k] * B[k][j];
+            }
+            C[i][j] = sum;
+        }
+    }
+}
