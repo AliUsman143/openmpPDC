@@ -4,6 +4,7 @@
 #include <omp.h>
 
 #define SIZE 500
+
 int A[SIZE][SIZE], B[SIZE][SIZE], C[SIZE][SIZE];
 
 void initializeMatrices()
