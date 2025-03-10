@@ -35,3 +35,12 @@ void parallelMatrixMultiplicationstatic()
         }
     }
 }
+
+int main()
+{
+    srand(time(0));
+    initializeMatrices();
+
+  
+    return 0;
+}
