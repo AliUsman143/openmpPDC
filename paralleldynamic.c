@@ -40,6 +40,10 @@ int main()
 {
     srand(time(0));
     initializeMatrices();
-    
+    double start = omp_get_wtime();
+    parallelMatrixMultiplication();
+    double end = omp_get_wtime();
+    printf("Parallel Execution Time: %f second \n", end - start);
+
     return 0;
 }
