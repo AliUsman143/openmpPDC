@@ -31,3 +31,15 @@ void matrixMultiplication()
         }
     }
 }
+
+int main()
+{
+    srand(time(0));
+    initializeMatrices();
+    clock_t start = clock();
+    matrixMultiplication();
+    clock_t end = clockO();
+    printf("Execution Time: %f second \n", (double)(end - start) / CLOCKS_PER_SEC);
+
+    return 0;
+}
