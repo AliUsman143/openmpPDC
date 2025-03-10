@@ -27,7 +27,7 @@ void parallelMatrixMultiplication()
     {
         for (int j = 0; j < SIZE; j++)
         {
-            int sum = 0; //private variable
+            int sum = 0; // private variable
             for (int k = 0; k < SIZE; k++)
             {
                 sum += A[i][k] * B[k][j];
@@ -35,4 +35,10 @@ void parallelMatrixMultiplication()
             C[i][j] = sum;
         }
     }
+}
+int main()
+{
+    srand(time(0));
+    
+    return 0;
 }
