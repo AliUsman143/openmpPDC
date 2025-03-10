@@ -38,7 +38,7 @@ int main()
     initializeMatrices();
     clock_t start = clock();
     matrixMultiplication();
-    clock_t end = clockO();
+    clock_t end = clock();
     printf("Execution Time: %f second \n", (double)(end - start) / CLOCKS_PER_SEC);
 
     return 0;
