@@ -20,4 +20,7 @@ void initializeMatrices()
     }
 }
 
+void parallelMatrixMultiplication()
+{
 
+}
